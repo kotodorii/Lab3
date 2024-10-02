@@ -106,22 +106,11 @@ public class InLabByHandTranslator implements Translator {
         String translation;
 
         switch (language) {
-            case GERMAN:
-                translation = "Kanada";
-                break;
-            case ENGLISH:
-            case FRENCH:
-                translation = "Canada";
-                break;
-            case CHINESE:
-                translation = "加拿大";
-                break;
-            case SPANISH:
-                translation = "Canadá";
-                break;
-            default:
-                translation = null;
-                break;
+            case GERMAN -> translation = "Kanada";
+            case ENGLISH, FRENCH -> translation = "Canada";
+            case CHINESE -> translation = "加拿大";
+            case SPANISH -> translation = "Canadá";
+            default -> translation = null;
         }
 
         return translation;
@@ -137,22 +126,11 @@ public class InLabByHandTranslator implements Translator {
         String translation;
 
         switch (language) {
-            case GERMAN:
-                translation = "Frankreich";
-                break;
-            case ENGLISH:
-            case FRENCH:
-                translation = "France";
-                break;
-            case CHINESE:
-                translation = "法国";
-                break;
-            case SPANISH:
-                translation = "Francia";
-                break;
-            default:
-                translation = null;
-                break;
+            case GERMAN -> translation = "Frankreich";
+            case ENGLISH, FRENCH -> translation = "France";
+            case CHINESE -> translation = "法国";
+            case SPANISH -> translation = "Francia";
+            default -> translation = null;
         }
 
         return translation;
